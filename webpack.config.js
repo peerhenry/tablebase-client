@@ -1,19 +1,27 @@
 var webpack = require('webpack');
+var path = require('path');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
+var ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
-
-  context: __dirname+'/src',
-  entry: './main',
+  context: path.join(__dirname, 'src'),
+  entry: './main.jsx',
 
   output: {
     path: __dirname + '/build',
     filename: 'bundle.js'
   },
 
+  devtool: 'source-map',
+
   resolve: {
-    extensions: ['', '.webpack.js', '.web.js', '.js', '.jsx'],
-    alias: {}
+    extensions: ['', '.webpack.js', '.web.js', '.js', '.jsx', '.scss'],
+    root: path.resolve(__dirname),
+    alias: {
+      styles: "src/stylesheets",
+      pages: "src/Pages",
+      navbar: "src/Navbar"
+    }
   },
 
   module: {
@@ -23,8 +31,13 @@ module.exports = {
         loader: 'babel',
         exclude: 'node_modules',
         query: {
-          presets: ['es2015', 'react']
+          presets: ['es2015', 'react'],
+          compact: false
         }
+      },
+      {
+        test:/\.scss$/,
+        loader: ExtractTextPlugin.extract('style', 'css!autoprefixer!sass')
       }
     ]
   },
@@ -41,6 +54,7 @@ module.exports = {
   plugins: [
       new HtmlWebpackPlugin({
           template: 'index.html'
-      })
+      }),
+      new ExtractTextPlugin("style.css")
   ]
 }

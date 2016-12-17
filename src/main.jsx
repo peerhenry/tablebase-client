@@ -1,8 +1,6 @@
 import * as React from 'react'
 import {render} from 'react-dom'
+import Layout from './Layout'
+import 'styles/buttons'
 
-const App = () => (
-  <h1>jumping around!</h1>
-)
-
-render(<App/>, document.getElementById('app'));
+render(<Layout>yoyoyo</Layout>, document.getElementById('app'));

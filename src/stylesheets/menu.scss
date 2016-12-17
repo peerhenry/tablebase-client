@@ -1,0 +1,12 @@
+#menu{
+  left: 160px;
+  margin-left: -160px;
+  position: fixed;
+  top: 34px;
+  bottom: 0;
+  width: 160px;
+  overflow-y: fill;
+  box-sizing: border-box;
+  z-index: 1000;
+  background: #181818;
+}

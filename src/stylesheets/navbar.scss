@@ -1,0 +1,12 @@
+$dark: #181818;
+$lessdark: #555;
+
+.pure-menu, .pure-menu-link, .pure-menu-link:focus{
+  color: #ddd;
+  background: $dark;
+}
+
+.pure-menu-link:hover{
+  color: #fff;
+  background: $lessdark;
+}
