@@ -1,30 +1,11 @@
 import * as React from 'react'
+import Table from './Table/Table'
 
-const Table = () => (
+const TableWrapper = () => (
   <div id="tableWrapper" style={{textAlign: "center", position: "relative"}}>
 
     <div style={{display: "inline-block", marginBottom: "-20px"}}>
-      <table className="pure-table pure-table-bordered" style={{display: "inline-block", marginBottom: "-4px"}}>
-        <thead>
-          <tr>
-            <th>#</th><th>Make</th><th>Model</th><th>Year</th>
-          </tr>
-        </thead>
-        <tbody style={{}}>
-          <tr>
-            <td>1</td><td></td><td></td><td></td>
-          </tr>
-          <tr>
-            <td>2</td><td></td><td></td><td></td>
-          </tr>
-          <tr>
-            <td>3</td><td></td><td></td><td></td>
-          </tr>
-          <tr>
-            <td>4</td><td></td><td></td><td></td>
-          </tr>
-        </tbody>
-      </table>
+      <Table/>
       <div className="button-revealer" style={{width: "100%", height: "20px"}}>
         <button className="pure-button table-button" style={{width: "100%", height: "20px", padding: "2px"}}>+</button>
       </div>
@@ -39,4 +20,4 @@ const Table = () => (
   </div>
 )
 
-export default Table
+export default TableWrapper

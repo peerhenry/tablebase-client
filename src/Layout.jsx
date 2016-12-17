@@ -1,7 +1,7 @@
 import * as React from 'react'
 import Navbar from 'navbar/Navbar'
 import Footer from './Footer'
-import TablePage from 'pages/Table/TablePage'
+import TablePage from 'pages/TablePage/TablePage'
 import SearchPage from 'pages/SearchPage'
 import SignupPage from 'pages/SignupPage'
 import LoginPage from 'pages/LoginPage'

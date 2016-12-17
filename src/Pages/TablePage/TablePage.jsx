@@ -1,12 +1,13 @@
 import * as React from 'react'
-import Table from './Table'
+import TableWrapper from './TableWrapper'
 import Description from './Description'
 import Comments from './Comments'
+import TableTitle from './TableTitle'
 
 const TablePage = () => (
   <div id="table-page">
-    <h1>TABLE Title</h1>
-    <Table/>
+    <TableTitle title="Dummy Title"/>
+    <TableWrapper/>
     <Description/>
     <Comments/>
   </div>
