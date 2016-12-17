@@ -7,12 +7,12 @@ const Navbar = () => {
     <div className="pure-menu pure-menu-horizontal">
       <a href="#" className="pure-menu-heading pure-menu-link" style={{fontWeight: "bold"}}>TABLEBASE</a>
       <ul className="pure-menu-list">
-        <NavbarItem name={"Menu"} />
-        <NavbarItem name={"Search"} />
+        <NavbarItem name={"Menu"} target={"#"} />
+        <NavbarItem name={"Search"} target={"#/search"} />
       </ul>
       <ul className="pure-menu-list" style={{float: "right"}}>
-        <NavbarItem name={"Sign Up"} />
-        <NavbarItem name={"Log In"} />
+        <NavbarItem name={"Sign Up"} target={"#/signup"}/>
+        <NavbarItem name={"Log In"} target={"#/login"}/>
       </ul>
     </div>
   )

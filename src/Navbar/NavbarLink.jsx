@@ -1,8 +1,8 @@
 import * as React from 'react'
 
-const Navbar = ({name}) => {
+const Navbar = ({name, target}) => {
   return (
-    <a href="#" className="pure-menu-link">{name}</a>
+    <a href={target} className="pure-menu-link">{name}</a>
   )
 };
 
