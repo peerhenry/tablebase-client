@@ -1,18 +1,19 @@
 import * as React from 'react'
-import NavbarItem from './NavbarItem'
+import MenuItemButton from 'menu/MenuItemButton'
+import MenuItemLink from 'menu/MenuItemLink'
 import "styles/navbar.scss"
 
-const Navbar = () => {
+const Navbar = ({toggleMenu}) => {
   return (
     <div className="pure-menu pure-menu-horizontal">
       <a href="#" className="pure-menu-heading pure-menu-link" style={{fontWeight: "bold"}}>TABLEBASE</a>
       <ul className="pure-menu-list">
-        <NavbarItem name={"Menu"} target={"#"} />
-        <NavbarItem name={"Search"} target={"#/search"} />
+        <MenuItemButton text={"Menu"} onClick={toggleMenu}/>
+        <MenuItemLink text={"Search"} target={"#/search"} />
       </ul>
       <ul className="pure-menu-list" style={{float: "right"}}>
-        <NavbarItem name={"Sign Up"} target={"#/signup"}/>
-        <NavbarItem name={"Log In"} target={"#/login"}/>
+        <MenuItemLink text={"Sign Up"} target={"#/signup"}/>
+        <MenuItemLink text={"Log In"} target={"#/login"}/>
       </ul>
     </div>
   )

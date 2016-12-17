@@ -1,8 +1,8 @@
 import TableCell from './TableCell'
 
-const TableRow = ({index}) => (
+const TableRow = ({index, displaySettings}) => (
   <tr>
-    <td>{index}</td>
+    {displaySettings.get('showEnumeration') ? <td>{index}</td> : ""}
     <TableCell/>
     <TableCell/>
     <TableCell/>

@@ -20,7 +20,8 @@ module.exports = {
     alias: {
       styles: "src/stylesheets",
       pages: "src/Pages",
-      navbar: "src/Navbar"
+      navbar: "src/Navbar",
+      menu: "src/Menu"
     }
   },
 

@@ -1,11 +1,11 @@
 import * as React from 'react'
 import Table from './Table/Table'
 
-const TableWrapper = () => (
+const TableWrapper = ({displaySettings}) => (
   <div id="tableWrapper" style={{textAlign: "center", position: "relative"}}>
 
     <div style={{display: "inline-block", marginBottom: "-20px"}}>
-      <Table/>
+      <Table displaySettings={displaySettings}/>
       <div className="button-revealer" style={{width: "100%", height: "20px"}}>
         <button className="pure-button table-button" style={{width: "100%", height: "20px", padding: "2px"}}>+</button>
       </div>

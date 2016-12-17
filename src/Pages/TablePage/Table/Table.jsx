@@ -1,10 +1,10 @@
 import TableHeader from './TableHeader'
 import TableBody from './TableBody'
 
-const Table = () => (
+const Table = ({displaySettings}) => (
   <table className="pure-table pure-table-bordered" style={{display: "inline-block", marginBottom: "-4px"}}>
-    <TableHeader/>
-    <TableBody/>
+    {displaySettings.get('showHeader') ? <TableHeader displaySettings={displaySettings}/> : ""}
+    <TableBody displaySettings={displaySettings}/>
   </table>
 )
 

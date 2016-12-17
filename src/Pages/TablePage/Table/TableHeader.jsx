@@ -1,9 +1,9 @@
 import TableHeaderCell from './TableHeaderCell'
 
-const TableHeader = () => (
+const TableHeader = ({displaySettings}) => (
   <thead>
     <tr>
-      <th>#</th>
+      {displaySettings.get('showEnumeration') ? <th>#</th> : ""}
       <TableHeaderCell text={"Make"}/>
       <TableHeaderCell text={"Model"}/>
       <TableHeaderCell text={"Year"}/>
