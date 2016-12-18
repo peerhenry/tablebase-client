@@ -52,6 +52,13 @@ const transformRows = (state, transform) => {
   return tempState.setIn(rowsTarget, newRows)
 }
 
+const updateCell = (state, payload) => {
+  const row = state.getIn(rowsTarget).get(payload.rowNr)
+  console.log('updating cell: ' + JSON.stringify(payload))
+  //return state
+  return state.setIn(['tablePageState', 'table', 'rows', payload.rowNr, payload.colNr], payload.text)
+}
+
 const Reducer = (state, action) => {
   switch(action.type){
     case 'TOGGLE_MENU':
@@ -78,6 +85,8 @@ const Reducer = (state, action) => {
       return popRow(state)
     case 'POP_COLUMN':
       return popColumn(state)
+    case 'UPDATE_CELL':
+      return updateCell(state, action.payload)
   }
   return state
 }
