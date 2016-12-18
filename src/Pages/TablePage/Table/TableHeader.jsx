@@ -1,12 +1,10 @@
 import TableHeaderCell from './TableHeaderCell'
 
-const TableHeader = ({displaySettings}) => (
+const TableHeader = ({displaySettings, header}) => (
   <thead>
     <tr>
       {displaySettings.get('showEnumeration') ? <th>#</th> : ""}
-      <TableHeaderCell text={"Make"}/>
-      <TableHeaderCell text={"Model"}/>
-      <TableHeaderCell text={"Year"}/>
+      {header.map(cell => (<TableHeaderCell text={cell}/>))}
     </tr>
   </thead>
 )

@@ -1,11 +1,9 @@
 import TableCell from './TableCell'
 
-const TableRow = ({index, displaySettings}) => (
+const TableRow = ({index, displaySettings, row}) => (
   <tr>
     {displaySettings.get('showEnumeration') ? <td>{index}</td> : ""}
-    <TableCell/>
-    <TableCell/>
-    <TableCell/>
+    {row.map(cell => <TableCell text={cell}/>)}
   </tr>
 )
 

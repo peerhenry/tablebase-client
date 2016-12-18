@@ -9,7 +9,14 @@ import {fromJS} from 'immutable'
 const initialState = fromJS({
   tablePageState: {
     table: {
-      title: "Initial Title"
+      title: "Initial Title",
+      header: ["Maker", "Model", "Year"],
+      rows: [
+        ['A', 'B', 'C'],
+        ['A', 'B', 'C'],
+        ['A', 'B', 'C'],
+        ['A', 'B', 'C']
+      ]
     },
     displaySettings: {
       showTitle: true,

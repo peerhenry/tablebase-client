@@ -1,19 +1,29 @@
 import * as React from 'react'
 import Table from './Table/Table'
 
-const TableWrapper = ({displaySettings}) => (
+const TableWrapper = ({displaySettings, table, tableManipulations}) => (
   <div id="tableWrapper" style={{textAlign: "center", position: "relative"}}>
 
     <div style={{display: "inline-block", marginBottom: "-20px"}}>
-      <Table displaySettings={displaySettings}/>
+      <Table displaySettings={displaySettings} table={table}/>
       <div className="button-revealer" style={{width: "100%", height: "20px"}}>
-        <button className="pure-button table-button" style={{width: "100%", height: "20px", padding: "2px"}}>+</button>
+        <button 
+          className="pure-button table-button" 
+          style={{width: "100%", height: "20px", padding: "2px"}} 
+          onClick={e => {e.preventDefault(); tableManipulations.addRow()}}>
+          +
+        </button>
       </div>
     </div>
 
     <div id="floating" style={{position: "absolute", display: "inline-block", verticalAlign: "top", height: "calc(100% - 20px)"}}>
       <div className="button-revealer" style={{height: "100%", width: "20px", padding: "0"}}>
-        <button className="pure-button table-button" style={{height: "100%", width: "20px", padding: "5px"}}>+</button>
+        <button 
+          className="pure-button table-button" 
+          style={{height: "100%", width: "20px", padding: "5px"}} 
+          onClick={e => {e.preventDefault(); tableManipulations.addColumn()}}>
+          +
+        </button>
       </div>
     </div>
 
