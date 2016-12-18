@@ -1,12 +1,21 @@
-table{
-  background: white;
-}
-
 .table-button{
   background: #E6E6E6;
+  //background: #fff;
+  border: 1px solid #cbcbcb;
   border-radius: 0;
-  display: none;
+  //display: none;
+  font-weight: bold;
+}
+
+.pure-table-bordered th{
+  border-bottom: 1px solid #cbcbcb;
+}
+
+.table-button-horizontal{
+  width: 100%;
   height: 20px;
+  padding: 0px;
+  padding-bottom: 2px;
 }
 
 .table-button:hover, .table-button:focus{
@@ -15,10 +24,12 @@ table{
 
 .table-button:active{
   background: #C8C8C8;
+  background: #fff;
 }
 
 .button-revealer{
-  margin-bottom: 20px;
+  //margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 .button-revealer:hover{
@@ -29,6 +40,14 @@ table{
   display: block
 }
 
+.editor-table{
+  border: none;
+  border-bottom: 1px solid #cbcbcb;
+}
+
 tr{
+  background: #fff;
   height: 35px;
+  border-left: 1px solid #cbcbcb;
+  border-right: 1px solid #cbcbcb;
 }

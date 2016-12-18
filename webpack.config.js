@@ -21,7 +21,9 @@ module.exports = {
       styles: "src/stylesheets",
       pages: "src/Pages",
       navbar: "src/Navbar",
-      menu: "src/Menu"
+      menu: "src/Menu",
+      table: "src/Pages/TablePage/Table",
+      tableButtons: "src/Pages/TablePage/Buttons"
     }
   },
 

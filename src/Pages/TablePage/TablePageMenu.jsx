@@ -12,7 +12,6 @@ const TablePageMenu = ({toggleActions}) => (
         <MenuItemButton text="Enumeration" onClick={toggleActions.toggleEnum}/>
         <MenuItemButton text="Description" onClick={toggleActions.toggleDescription}/>
         <MenuItemButton text="Comments" onClick={toggleActions.toggleComments}/>
-        <MenuItemLink text="dummy" target="#"/>
       </ul>
     </div>
   </div>

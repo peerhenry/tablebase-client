@@ -2,7 +2,7 @@ import * as React from 'react'
 
 const SignupPage = () => (
   <div id="signup-page">
-    <h1>This is the signup page</h1>
+    <h1>Sign up now - it's free!</h1>
   </div>
 )
 
