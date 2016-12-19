@@ -5,7 +5,7 @@ const bottomButtonStyle = {
 }
 
 const BottomButtons = ({tableManipulations}) => (
-  <div className="button-revealer" style={{display: "block", width: "100%", height: "20px"}}>
+  <div className="button-revealer" style={{display: "block", width: "100%-20px", height: "20px", marginLeft: "20px"}}>
     <div style={bottomButtonStyle}>
       <button 
         className="pure-button table-button table-button-horizontal"

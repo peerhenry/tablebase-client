@@ -2,6 +2,7 @@ import * as React from 'react'
 import Table from './Table/Table'
 import ButtonsBottom from './Buttons/ButtonsBottom'
 import ButtonsRight from './Buttons/ButtonsRight'
+import ButtonsLeft from './Buttons/ButtonsLeft'
 
 const TableWrapper = ({displaySettings, table, tableManipulations}) => (
   <div id="tableWrapper" style={{textAlign: "center", position: "relative", marginBottom: "-4px"}}>

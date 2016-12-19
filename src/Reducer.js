@@ -32,7 +32,7 @@ const removeRow = (state, i) => {
 }
 
 const removeColumn = (state, i) => {
-  const newState = transformRows(state, row => row.delete(1))
+  const newState = transformRows(state, row => row.delete(i))
   return newState
 }
 
@@ -57,6 +57,10 @@ const updateCell = (state, payload) => {
   console.log('updating cell: ' + JSON.stringify(payload))
   //return state
   return state.setIn(['tablePageState', 'table', 'rows', payload.rowNr, payload.colNr], payload.text)
+}
+
+const updateHeader = (state, payload) => {
+  return state.setIn(['tablePageState', 'table', 'header', payload.colNr], payload.text)
 }
 
 const Reducer = (state, action) => {
@@ -87,6 +91,8 @@ const Reducer = (state, action) => {
       return popColumn(state)
     case 'UPDATE_CELL':
       return updateCell(state, action.payload)
+    case 'UPDATE_HEADER':
+      return updateHeader(state, action.payload)
   }
   return state
 }

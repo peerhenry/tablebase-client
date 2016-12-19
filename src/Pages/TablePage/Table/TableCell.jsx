@@ -19,7 +19,7 @@ const TableCell = ({text, rowNr, colNr, updateCell}) => {
       }}
       onBlur = {e => {
         e.preventDefault(); 
-        if(changed) updateCell(inputTag.value)
+        if(changed) updateCell(inputTag.value);
       }}
     />
   </td>

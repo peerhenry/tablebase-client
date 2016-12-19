@@ -45,9 +45,25 @@
   border-bottom: 1px solid #cbcbcb;
 }
 
+.button-td-left{
+  padding: 0;
+}
+
+th{
+  background-color: #e0e0e0
+}
+
 tr{
   background: #fff;
   height: 35px;
   border-left: 1px solid #cbcbcb;
   border-right: 1px solid #cbcbcb;
+}
+
+.no-border-bottom{
+  border-bottom-width: 0;
+}
+
+.no-border-left{
+  border-left-width: 0;
 }
