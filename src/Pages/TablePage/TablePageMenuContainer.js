@@ -8,6 +8,7 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
   return {
     toggleActions: {
+      closeMenu: () => dispatch({type: 'TOGGLE_MENU'}),
       toggleTitle: () => dispatch({type: 'TOGGLE_TITLE'}),
       toggleHeader: () => dispatch({type: 'TOGGLE_HEADER'}),
       toggleEnum: () => dispatch({type: 'TOGGLE_ENUM'}),

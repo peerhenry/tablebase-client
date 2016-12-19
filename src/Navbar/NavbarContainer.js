@@ -7,10 +7,9 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    toggleMenu: () => {
-      console.log('something ghappen')
-      dispatch({type: 'TOGGLE_MENU'})
-    }
+    // toggleMenu: () => {
+    //   dispatch({type: 'TOGGLE_MENU'})
+    // }
   }
 }
 

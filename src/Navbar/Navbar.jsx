@@ -3,12 +3,11 @@ import MenuItemButton from 'menu/MenuItemButton'
 import MenuItemLink from 'menu/MenuItemLink'
 import "styles/navbar.scss"
 
-const Navbar = ({toggleMenu}) => {
+const Navbar = () => {
   return (
     <div className="pure-menu pure-menu-horizontal">
       <a href="#" className="pure-menu-heading pure-menu-link" style={{fontWeight: "bold"}}>TABLEBASE</a>
       <ul className="pure-menu-list">
-        <MenuItemButton text={"Menu"} onClick={toggleMenu}/>
         <MenuItemLink text={"Search"} target={"#/search"} />
       </ul>
       <ul className="pure-menu-list" style={{float: "right"}}>

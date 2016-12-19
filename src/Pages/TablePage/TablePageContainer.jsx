@@ -5,4 +5,10 @@ const mapStateToProps = (state) => {
   return {tablePageState: state.get('tablePageState')}
 }
 
-export default connect(mapStateToProps)(TablePage)
+const mapDispatchToProps = (dispatch) => {
+  return {
+    showMenu: () => dispatch({type: 'TOGGLE_MENU'})
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(TablePage)
