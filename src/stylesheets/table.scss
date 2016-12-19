@@ -1,14 +1,16 @@
+$border-color: #cbcbcb;
+
 .table-button{
   background: #E6E6E6;
   //background: #fff;
-  border: 1px solid #cbcbcb;
+  border: 1px solid $border-color;
   border-radius: 0;
   //display: none;
   font-weight: bold;
 }
 
 .pure-table-bordered th{
-  border-bottom: 1px solid #cbcbcb;
+  border-bottom: 1px solid $border-color;
 }
 
 .table-button-horizontal{
@@ -42,7 +44,7 @@
 
 .editor-table{
   border: none;
-  border-bottom: 1px solid #cbcbcb;
+  border-bottom: 1px solid $border-color;
 }
 
 .button-td-left{
@@ -53,12 +55,12 @@ th{
   background-color: #e0e0e0
 }
 
-tr{
-  background: #fff;
-  height: 35px;
-  border-left: 1px solid #cbcbcb;
-  border-right: 1px solid #cbcbcb;
-}
+// tr{
+//   background: #fff;
+//   height: 35px;
+//   border-left: 1px solid $border-color;
+//   border-right: 1px solid $border-color;
+// }
 
 .no-border-bottom{
   border-bottom-width: 0;

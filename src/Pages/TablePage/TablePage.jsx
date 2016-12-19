@@ -4,16 +4,19 @@ import Description from './Description'
 import Comments from './Comments'
 import TableTitle from './TableTitle'
 import TablePageMenuContainer from './TablePageMenuContainer'
+import 'styles/bootstrap/bootstripped'
 
 const TablePage = ({tablePageState, showMenu}) => (
   <div>
     <button className="pure-button pure-menu-link" onClick={(e) => {e.preventDefault(); showMenu()}} style={{textAlign: "left"}}>Menu</button>
     <div id="table-page">
       { tablePageState.get('displaySettings').get('showMenu') ? <TablePageMenuContainer/> : "" }
-      { tablePageState.get('displaySettings').get('showTitle') ? <TableTitle title={tablePageState.get('table').get('title')}/> : ""} 
+      { tablePageState.get('displaySettings').get('showTitle') ? <TableTitle title={tablePageState.getIn(['table', 'title'])}/> : ""} 
       <TableWrapperContainer/>
-      { tablePageState.get('displaySettings').get('showDescription') ? <Description/> : "" }
-      { tablePageState.get('displaySettings').get('showComments') ? <Comments/> : "" }
+      <div className="container">
+        { tablePageState.get('displaySettings').get('showDescription') ? <Description text={tablePageState.getIn(['table', 'description'])}/> : "" }
+        { tablePageState.get('displaySettings').get('showComments') ? <Comments/> : "" }
+      </div>
     </div>
   </div>
 )

@@ -1,0 +1,22 @@
+.panel {
+  margin-bottom: $line-height-computed;
+  background-color: #fff;
+  border: 1px solid transparent;
+  @include box-shadow(0 1px 1px rgba(0,0,0,.05));
+}
+
+.panel-body {
+  padding: $panel-body-padding;
+  @extend .clearfix;
+}
+
+.panel-heading {
+  padding: $panel-heading-padding;
+  border-bottom: 1px solid transparent;
+}
+
+.panel-footer {
+  padding: $panel-footer-padding;
+  background-color: $panel-footer-bg;
+  border-top: 1px solid $panel-inner-border;
+}

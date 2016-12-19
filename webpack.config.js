@@ -23,7 +23,8 @@ module.exports = {
       navbar: "src/Navbar",
       menu: "src/Menu",
       table: "src/Pages/TablePage/Table",
-      tableButtons: "src/Pages/TablePage/Buttons"
+      tableButtons: "src/Pages/TablePage/Buttons",
+      pageComponents: "src/Pages/PageComponents"
     }
   },
 
