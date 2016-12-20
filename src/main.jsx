@@ -10,8 +10,8 @@ import TablePageContainer from 'pages/TablePage/TablePageContainer'
 import SearchPage from 'pages/SearchPage'
 import SignupPage from 'pages/SignupPage'
 import LoginPage from 'pages/LoginPage'
-import Legal from 'pages/Legal'
-import Privacy from 'pages/Privacy'
+import Legal from 'pages/Legal/Legal'
+import Privacy from 'pages/Legal/Privacy'
 
 const initialState = fromJS({
   tablePageState: {

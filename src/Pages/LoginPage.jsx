@@ -18,10 +18,8 @@ const LoginPage = () => (
                 <input id="password" type="password" placeholder="Password"/>
               </div>
       
-              <div className="pure-controls">
-                <button type="submit" className="pure-button pure-button-primary">Log In</button>
-              </div>
             </fieldset>
+            <button type="submit" className="pure-button pure-button-primary">Log In</button>
           </form>
         </center>
       </Panel>

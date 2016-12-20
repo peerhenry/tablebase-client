@@ -34,7 +34,7 @@ const SignupPage = () => (
           <br/>
           <br/>
           <form className="pure-form pure-form-aligned">
-            <p style={{fontWeight: "bold"}}>Do you have a Google account?</p>
+            <p className="bold">Do you have a Google account?</p>
             <button className="pure-button pure-button-primary">Sign up with Google</button>
           </form>
           <br/>

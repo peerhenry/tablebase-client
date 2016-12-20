@@ -1,7 +1,7 @@
 import * as React from 'react'
 import TableWrapperContainer from './TableWrapperContainer'
 import Description from './Description'
-import Comments from './Comments'
+import CommentsPanel from './Comments/CommentsPanel'
 import TableTitle from './TableTitle'
 import TablePageMenuContainer from './TablePageMenuContainer'
 import 'styles/bootstrap/bootstripped'
@@ -15,7 +15,7 @@ const TablePage = ({tablePageState, showMenu}) => (
       <TableWrapperContainer/>
       <div className="container">
         { tablePageState.get('displaySettings').get('showDescription') ? <Description text={tablePageState.getIn(['table', 'description'])}/> : "" }
-        { tablePageState.get('displaySettings').get('showComments') ? <Comments/> : "" }
+        { tablePageState.get('displaySettings').get('showComments') ? <CommentsPanel/> : "" }
       </div>
     </div>
   </div>
