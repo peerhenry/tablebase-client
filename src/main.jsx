@@ -10,6 +10,8 @@ import TablePageContainer from 'pages/TablePage/TablePageContainer'
 import SearchPage from 'pages/SearchPage'
 import SignupPage from 'pages/SignupPage'
 import LoginPage from 'pages/LoginPage'
+import Legal from 'pages/Legal'
+import Privacy from 'pages/Privacy'
 
 const initialState = fromJS({
   tablePageState: {
@@ -48,6 +50,8 @@ const Main = () => (
         <Route path="search" component={SearchPage} />
         <Route path="signup" component={SignupPage} />
         <Route path="login" component={LoginPage} />
+        <Route path="legal" component={Legal} />
+        <Route path="privacy" component={Privacy} />
         <Route path=":tableId" component={TablePageContainer} />
       </Route>
     </Router>

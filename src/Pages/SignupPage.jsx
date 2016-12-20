@@ -27,16 +27,19 @@ const SignupPage = () => (
                 <label for="email">Email Address</label>
                 <input id="email" type="email" placeholder="Email Address"/>
               </div>
-      
-              <div className="pure-controls">
-                <label for="cb" className="pure-checkbox">
-                  <input id="cb" type="checkbox"/> I've read the terms and conditions
-                </label>
-    
-                <button type="submit" className="pure-button pure-button-primary">Submit</button>
-              </div>
             </fieldset>
+            <p style={{color: "#999"}}>By proceeding to create an account, you are agreeing to our <a style={{color: "#999"}} href="#/legal">Terms of Service</a> and <a style={{color: "#999"}} href="#/privacy">Privacy Policy</a>.</p>
+            <button type="submit" className="pure-button pure-button-primary">Create New Account</button>
           </form>
+          <br/>
+          <br/>
+          <form className="pure-form pure-form-aligned">
+            <p style={{fontWeight: "bold"}}>Do you have a Google account?</p>
+            <button className="pure-button pure-button-primary">Sign up with Google</button>
+          </form>
+          <br/>
+          <br/>
+          <p style={{color: "#999"}}>If you already have an account, please go to the <a style={{color: "#999"}} href="#/login">Log in page</a>.</p>
         </center>
       </Panel>
     </div>
