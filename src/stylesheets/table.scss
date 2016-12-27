@@ -1,12 +1,23 @@
-$border-color: #cbcbcb;
+@import "colors";
+
+th{
+  background-color: $table-header-bg;
+}
 
 .table-button{
-  background: #E6E6E6;
-  //background: #fff;
+  background: $table-btn-bg;
   border: 1px solid $border-color;
   border-radius: 0;
   //display: none;
   font-weight: bold;
+
+  &:hover, &:focus{
+    background: $table-btn-bg-hover;
+  }
+
+  &:active{
+    background: $table-btn-bg-active;
+  }
 }
 
 .pure-table-bordered th{
@@ -20,26 +31,17 @@ $border-color: #cbcbcb;
   padding-bottom: 2px;
 }
 
-.table-button:hover, .table-button:focus{
-  background: #D2D2D2;
-}
-
-.table-button:active{
-  background: #C8C8C8;
-  background: #fff;
-}
-
 .button-revealer{
   //margin-bottom: 20px;
   margin-bottom: 0px;
-}
 
-.button-revealer:hover{
-  margin-bottom: 0px;
-}
+  &:hover{
+    margin-bottom: 0px;
 
-.button-revealer:hover .table-button{
-  display: block
+    .table-button{
+      display: block;
+    }
+  }
 }
 
 .editor-table{
@@ -50,17 +52,6 @@ $border-color: #cbcbcb;
 .button-td-left{
   padding: 0;
 }
-
-th{
-  background-color: #e0e0e0
-}
-
-// tr{
-//   background: #fff;
-//   height: 35px;
-//   border-left: 1px solid $border-color;
-//   border-right: 1px solid $border-color;
-// }
 
 .no-border-bottom{
   border-bottom-width: 0;

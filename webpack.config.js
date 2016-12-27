@@ -19,12 +19,12 @@ module.exports = {
     root: path.resolve(__dirname),
     alias: {
       styles: "src/stylesheets",
-      pages: "src/Pages",
-      navbar: "src/Navbar",
-      menu: "src/Menu",
-      table: "src/Pages/TablePage/Table",
-      tableButtons: "src/Pages/TablePage/Buttons",
-      pageComponents: "src/Pages/PageComponents"
+      pages: "src/Components/Pages",
+      navbar: "src/Components/Navbar",
+      menu: "src/Components/Menu",
+      table: "src/Components/Pages/TablePage/Table",
+      tableButtons: "src/Components/Pages/TablePage/Buttons",
+      pageComponents: "src/Components/Pages/PageComponents"
     }
   },
 
