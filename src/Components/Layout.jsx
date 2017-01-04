@@ -1,9 +1,6 @@
 import * as React from 'react'
 import NavbarContainer from 'navbar/NavbarContainer'
 import Footer from './Footer'
-import 'styles/page'
-import 'styles/table'
-import 'styles/general'
 
 const Layout = ({children}) => (
   <div id="layout">

@@ -2,6 +2,7 @@ $dark: #181818;
 $lessdark: #333;
 
 .pure-menu, .pure-menu-link, .pure-menu-link:focus{
+  height: 40px;
   color: #ddd;
   background: $dark;
 }

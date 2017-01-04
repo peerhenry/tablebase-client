@@ -8,30 +8,9 @@ import {Router, Route, hashHistory, IndexRoute} from 'react-router'
 import Reducer from './Reducer'
 import TableBaseRouter from './Components/TableBaseRouter'
 import 'styles/main'
+import {startObject} from './InitialState'
 
-const initialState = fromJS({
-  tablePageState: {
-    table: {
-      title: "Initial Title",
-      header: ["Maker", "Model", "Year"],
-      rows: [
-        ['', '', ''],
-        ['', '', ''],
-        ['', '', '']
-      ],
-      description: 'This is the description for the table.'
-    },
-    displaySettings: {
-      showTitle: true,
-      showHeader: true,
-      showEnumeration: true,
-      showDescription: true,
-      showComments: true,
-      showMenu: false
-    }
-  }
-})
-
+const initialState = fromJS(startObject)
 let store = createStore(Reducer, initialState)
 
 const Main = () => (
