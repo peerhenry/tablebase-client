@@ -1,19 +1,22 @@
 $footer-height: 50px;
 
-.content {
-  min-height: calc(100vh - 80px);
+html, body{
+  height: 100%;
+  margin: 0;
 }
-.footer {
+.wrapper{
+  min-height: 100%;
+  margin-bottom: -$footer-height;
+}
+footer, .push{
   height: $footer-height;
 }
-
-* {
-  box-sizing: border-box;
-}
-
-footer {
-  background: #333;
+footer{
   color: #fff;
+  background-color: #333;
   line-height: $footer-height;
   padding: 0 20px;
+}
+footer p{
+  margin: 0;
 }

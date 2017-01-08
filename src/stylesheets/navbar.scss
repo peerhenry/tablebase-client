@@ -1,14 +1,142 @@
-$dark: #181818;
-$lessdark: #333;
 
-.pure-menu, .pure-menu-link, .pure-menu-link:focus{
-  height: 40px;
-  color: #ddd;
-  background: $dark;
+html, body{
+  font-family: Verdana,sans-serif;
+  font-size: 17px;
 }
 
-.pure-menu-link:hover{
+body {
+  width: 100%;
+}
+
+/* ==================================== */
+/* NAVBAR STYLING */
+/* ==================================== */
+
+/* Style the navbar */
+nav {
+  width: 100%;
+  max-height: 45px;
+  margin: 0;
+  background-color: #222;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* this is important: fills up remaining horizontal space. */
+}
+
+/*The first navbar item*/
+.base-nav-item{
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav div a, nav ul li {
+  float: left;
+  background-color: #222;
+}
+
+/* The clickable elements of the navbar */
+nav a, nav label {
+  padding: 14px 16px;
+  display: inline-block;
+  color: #ddd;
+  text-align: center;
+  text-decoration: none;
+  line-height: 17px;
+}
+
+nav a:hover, nav label:hover{
+  background-color: #777;
   color: #fff;
-  background: $lessdark;
-  text-shadow: 0px 0px 1px #dfe;
+}
+
+/* The clickable label that appears at small width */
+nav div label{
+  display: none;
+  float: right;
+  cursor: pointer;
+}
+
+/* Clicking makes it black */
+nav a:active, nav label:active{
+  background-color: #000;
+}
+
+nav ul li input{
+  background-color: #eee;
+  padding: 6px 8px;
+  border-radius: 4px;
+  width: 200px;
+  font-size: 14px;
+}
+
+/* Checkbox and label here for the CSS trick*/
+nav input[type="checkbox"]{
+  display: none;
+}
+
+/* ==================================== */
+/* CLASSES */
+/* ==================================== */
+
+.rightli{
+  float: right;
+}
+
+.github-icon-link{
+  padding: 0 16px;
+}
+
+/* could not find a non-hardcoded way of getting the icon centered :( */
+.fa-github{
+  line-height: 45px; /* 2x padding + font size */
+  height: 45px;
+}
+
+/* ==================================== */
+/* MAKE NAVBAR RESPONSIVE */
+/* ==================================== */
+/*
+The label and checkbox are used for a CSS trick:
+The label toggles the checkbox.
+The checkbox is used in css to show or hide the navbar ul in small width.
+=> A responsive navbar without JS : )
+*/
+
+@keyframes dropdown {
+  from { transform: translateY(-300px); }
+  to { transform: translateY(-2px); }
+}
+
+@media screen and (max-width:960px) {/*680*/
+  ul { 
+    display: none;
+  }
+  nav { 
+    background-color: transparent;
+    max-height: none;
+  }
+  nav div { 
+    width: 100%;
+    background-color: #222;
+    display: inline-block;
+  }
+  nav div label { display: inline-block; }
+  nav ul{
+    width: 100%;
+  }
+  nav ul li, nav ul li>a { width: 100%;}
+  nav ul li form input { width: calc(100% - 74px); margin-left: 4px}
+  nav ul li form a { width: auto;}
+
+  nav > input[type=checkbox]:checked ~ ul{
+    display: inline-block;
+    animation-name: dropdown;
+    animation-duration: 0.3s;
+    transform: translateY(-2px);
+  }
+
+  nav .github-icon-link{
+    display: none;
+  }
 }

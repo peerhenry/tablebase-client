@@ -46,3 +46,34 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+input,
+label,
+select,
+button,
+textarea
+{
+	margin:0;
+	border:0;
+	padding:0;
+	display:inline-block;
+	vertical-align:middle;
+	white-space:normal;
+	background:none;
+	line-height:1;
+	/* Browsers have different default form fonts */
+	font-size:17px;
+	font-family:Arial;
+}
+input:focus
+{
+	outline:0;
+}
+
+input,
+textarea
+{
+	-webkit-box-sizing:content-box;
+	-moz-box-sizing:content-box;
+	box-sizing:content-box;
+}

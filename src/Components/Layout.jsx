@@ -1,16 +1,12 @@
 import * as React from 'react'
 import NavbarContainer from 'navbar/NavbarContainer'
-import Footer from './Footer'
 
 const Layout = ({children}) => (
   <div id="layout">
-    <div className="content">
+    <header>
       <NavbarContainer/>
-      <div className="page" style={{padding: "40px 40px 0 40px"}}>
-        {children}
-      </div>
-    </div>
-    <Footer/>
+    </header>
+    {children}
   </div>
 )
 

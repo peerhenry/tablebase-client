@@ -2,10 +2,10 @@ import * as React from 'react'
 import 'styles/footer.scss'
 
 const Footer = () => (
-  <footer id="footer" className="footer">
+  <div>
     <span>&copy; PeerHenry 2017 </span>
     <a href="www.github.com/peerhenry/tablebase-client">Github</a>
-  </footer>
+  </div>
 )
 
 export default Footer

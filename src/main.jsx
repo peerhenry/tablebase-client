@@ -7,6 +7,7 @@ import {Router, Route, hashHistory, IndexRoute} from 'react-router'
 
 import Reducer from './Reducer'
 import TableBaseRouter from './Components/TableBaseRouter'
+import Footer from './Components/Footer'
 import 'styles/main'
 import {startObject} from './InitialState'
 
@@ -20,3 +21,4 @@ const Main = () => (
 )
 
 render(<Main/>, document.getElementById('app'));
+render(<Footer/>, document.getElementById('footer'));

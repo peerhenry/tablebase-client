@@ -4,9 +4,9 @@ export let startObject = {
       title: "Initial Title",
       header: ["Maker", "Model", "Year"],
       rows: [
-        ['', '', ''],
-        ['', '', ''],
-        ['', '', '']
+        ['a', 'b', 'c'],
+        ['1', '2', '3'],
+        ['x', 'y', 'z']
       ],
       description: 'This is the description for the table.'
     },
