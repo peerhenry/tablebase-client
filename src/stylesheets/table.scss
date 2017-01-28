@@ -1,7 +1,28 @@
 @import "colors";
 
+/* === TABLE ELEMENT === */
+
+
 th{
   background-color: $table-header-bg;
+  border-right: 1px solid $border-color;
+}
+
+td{
+  background: #fff;
+  border-bottom: 1px solid $border-color;
+  border-right: 1px solid $border-color;
+}
+
+table{
+  max-width: 1170px;
+  overflow: auto;
+}
+
+/* === TABLE CLASSES === */
+
+.table-cell-input{
+  min-width: 200px;
 }
 
 .table-button{
@@ -10,6 +31,7 @@ th{
   border-radius: 0;
   //display: none;
   font-weight: bold;
+  color: #000;
 
   &:hover, &:focus{
     background: $table-btn-bg-hover;
@@ -20,9 +42,11 @@ th{
   }
 }
 
+/*
 .pure-table-bordered th{
   border-bottom: 1px solid $border-color;
 }
+*/
 
 .table-button-horizontal{
   width: 100%;
@@ -59,4 +83,12 @@ th{
 
 .no-border-left{
   border-left-width: 0;
+}
+
+/* cells at the edges (next to the delete buttons) are invisible */
+.invisible-td{
+  background: transparent;
+  border: none;
+  padding: 0;
+  border-bottom-width: 0;
 }

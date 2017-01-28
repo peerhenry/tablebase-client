@@ -18,7 +18,7 @@ const Navbar = () => {
         <MenuItemLink text={"Sign Up"} target={"#/signup"}/>
         <MenuItemLink text={"Log In"} target={"#/login"}/>
         <li className="rightli">
-          <a href="http://www.github.com/peerhenry/tablebase-client" class="github-icon-link">
+          <a href="http://www.github.com/peerhenry/tablebase-client" className="github-icon-link">
             <i className="fa fa-github fa-2x" aria-hidden="true"></i>
           </a>
         </li>

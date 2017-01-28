@@ -1,9 +1,9 @@
 import * as React from 'react'
 
 const SearchPage = () => (
-  <div id="search-page">
+  <section id="search-page">
     <h1>This is the search page</h1>
-  </div>
+  </section>
 )
 
 export default SearchPage

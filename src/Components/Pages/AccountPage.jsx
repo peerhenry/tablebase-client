@@ -1,9 +1,9 @@
 import * as React from 'react'
 
 const AccountPage = () => (
-  <div id="account-page">
+  <section id="account-page">
     <h1>This is the account page</h1>
-  </div>
+  </section>
 )
 
 export default AccountPage

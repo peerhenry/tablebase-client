@@ -1,4 +1,3 @@
-import 'styles/menu'
 import MenuItemButton from 'menu/MenuItemButton'
 import MenuItemLink from 'menu/MenuItemLink'
 

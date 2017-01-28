@@ -1,7 +1,7 @@
 import Panel from 'pageComponents/Panel'
 
 const SignupPage = () => (
-  <div id="signup-page">
+  <section id="signup-page">
     <div className="container">
       <Panel>
         <center>
@@ -43,7 +43,7 @@ const SignupPage = () => (
         </center>
       </Panel>
     </div>
-  </div>
+  </section>
 )
 
 export default SignupPage

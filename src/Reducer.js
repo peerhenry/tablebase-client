@@ -14,8 +14,8 @@ const addRow = (state) => {
   let rows = state.getIn(rowsTarget).toArray();
   let newRow = []
   for(var i = 0; i<nrOfColumns; i++) newRow[i] = ""
-  rows.push(newRow);
-  return state.setIn(rowsTarget, fromJS(rows));
+  rows.push(newRow)
+  return state.setIn(rowsTarget, fromJS(rows))
 }
 
 const addColumn = (state) => {

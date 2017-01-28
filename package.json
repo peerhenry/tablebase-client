@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "start chrome ./build/index.html",
     "build": "webpack && start chrome ./build/index.html",
-    "dev": "webpack-dev-server --content-base build --inline --hot"
+    "dev": "webpack-dev-server --content-base build --inline --hot",
+    "open": "start chrome ./build/index.html"
   },
   "author": "PeerHenry",
   "license": "ISC",
